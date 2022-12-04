@@ -1,0 +1,45 @@
+GET http://localhost:5000/heroes
+
+###
+GET http://localhost:5000/heroes/638c9b1a7d27e3da64dca8c9
+
+###
+POST http://localhost:5000/heroes
+Content-Type: application/json
+
+{
+    "name": "Bruce Wayne",
+    "codename": "Batman",
+    "publisher": "DC Comics"
+}
+
+###
+POST http://localhost:5000/heroes
+Content-Type: application/json
+
+{
+    "name": "Peter Parker",
+    "codename": "Spider-Man",
+    "publisher": "Marvel Comics"
+}
+
+###
+POST http://localhost:5000/heroes
+Content-Type: application/json
+
+{
+    "name": "Clark Kent",
+    "codename": "Superman",
+    "publisher": "DC Comics"
+}
+
+###
+PATCH http://localhost:5000/heroes/638c9b1a7d27e3da64dca8c9
+Content-Type: application/json
+
+{
+    "codename": "Batman: The Dark Knight"
+}
+
+###
+DELETE http://localhost:5000/heroes/638c9d669273f66b323d175f
